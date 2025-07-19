@@ -1,0 +1,128 @@
+/* ✅ Base Layout */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0F172A;
+  font-family: 'Inter', sans-serif;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ✅ Header with Image Beside Title */
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.brand-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #38BDF8;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.brand-photo:hover {
+  transform: scale(1.05);
+}
+
+.brand-text {
+  text-align: left;
+}
+
+.brand-title {
+  font-size: 22px;
+  margin: 0;
+  color: #38BDF8;
+  font-weight: 700;
+}
+
+.brand-sub {
+  margin: 0;
+  color: #CBD5E1;
+  font-size: 14px;
+}
+
+/* ✅ Main Container for Alarm UI */
+.container {
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+}
+
+/* ✅ Live Clock */
+.live-clock {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* ✅ Alarm Card Styling */
+.alarm-card {
+  background-color: #1E293B;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ✅ Labels & Inputs */
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #CBD5E1;
+}
+
+input[type="text"],
+input[type="time"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* ✅ Button Section */
+.buttons {
+  margin-top: 10px;
+}
+
+button {
+  background-color: #38BDF8;
+  color: #0F172A;
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  margin: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #0ea5e9;
+}
+
+/* ✅ Alarm Status Message */
+#status {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #FACC15;
+}
+
+/* ✅ Hide Default Audio Controls */
+audio {
+  display: none;
+}

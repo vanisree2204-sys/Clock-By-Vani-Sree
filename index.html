@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klock by Vani Sree</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ✅ Hero Section -->
+    <!-- ✅ Horizontal Brand Header -->
+    <header class="brand-header">
+        <img src="vani.jpg" alt="Vani Sree" class="brand-photo" />
+        <div class="brand-text">
+            <h1 class="brand-title">Klock by Vani Sree</h1>
+            <p class="brand-sub">The cleanest way to rise and shine ⏰</p>
+        </div>
+    </header>
+
+    <!-- ✅ Main Alarm App -->
+    <div class="container">
+        <div class="live-clock" id="liveTime">--:--:--</div>
+
+        <div class="alarm-card">
+            <label for="alarmTitle">Alarm Title</label>
+            <input type="text" id="alarmTitle" placeholder="e.g., Wake Up Call" />
+
+            <label for="alarmTime">Select Time</label>
+            <input type="time" id="alarmTime" />
+
+            <label for="alarmSoundUpload">Choose Alarm Sound (optional)</label>
+            <input type="file" id="alarmSoundUpload" accept="audio/*" />
+
+            <div class="buttons">
+                <button onclick="setAlarm()">Set Alarm</button>
+                <button onclick="stopAlarm()">Stop Alarm</button>
+                <button onclick="testSound()">🔊 Test Sound</button>
+            </div>
+
+            <p id="status"></p>
+        </div>
+
+        <audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
