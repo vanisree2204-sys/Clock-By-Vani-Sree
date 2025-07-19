@@ -1,4 +1,4 @@
-# Klock by Vani Sree ⏰
+# Clock by Vani Sree ⏰
 
 A simple, clean, and customizable **web-based alarm clock** built with HTML, CSS, and JavaScript.
 
